@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ICONS */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* BUTTONS */
+.btn-gold {
+  background-color: #C9A24A;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #B58F3D;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  border: 1px solid #C9A24A;
+  color: #C9A24A;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #C9A24A;
+  color: white;
+}
+
+/* SHADOWS */
+.card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(201, 162, 74, 0.15);
+}
+
+.services-card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+/* GRADIENT */
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #C9A24A 100%);
+}
+
+/* SCROLLBAR */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 🔥 GLOBAL SCROLL FIX (CORRECT) */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  /* mobile */
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 100px;
+    /* desktop */
+  }
+}
