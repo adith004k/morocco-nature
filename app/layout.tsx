@@ -16,8 +16,14 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Morocco Nature | Beauty Parlour",
-  description: "Best Beauty Parlour in Meenchanda, Calicut. Student Deals & Bridal Experts",
+  title: "Best Beauty Parlour in Calicut | Morocco Nature",
+
+  description:
+    "Morocco Nature is a premium beauty parlour in Calicut offering bridal makeup, hair styling, facials, skincare, and student beauty packages.",
+
+  verification: {
+    google: "RLXTe07bxK949cU7JTYryEJJLYxigzvsyYSUCxJfnsA",
+  },
 };
 
 export default function RootLayout({
@@ -28,10 +34,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body className={`${notoSerif.variable} ${manrope.variable} bg-surface font-body text-on-surface selection:bg-primary-container antialiased`}>
+
+      <body
+        className={`${notoSerif.variable} ${manrope.variable} bg-surface font-body text-on-surface selection:bg-primary-container antialiased`}
+      >
         {children}
       </body>
     </html>
