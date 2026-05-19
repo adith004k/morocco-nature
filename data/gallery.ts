@@ -29,13 +29,13 @@ export const galleryItems = [
     title: "The Effortless Bob",
     quote: "Modern trends for a modern era."
   },
-  {
-    id: 5,
-    src: "/gallery/interior5.jpg",
-    category: "interior",
-    title: "Reception Detail",
-    quote: "Minimalist touches."
-  },
+  // {
+  //   id: 5,
+  //   src: "/gallery/interior5.jpg",
+  //   category: "interior",
+  //   title: "Reception Detail",
+  //   quote: "Minimalist touches."
+  // },
   {
     id: 6,
     src: "/gallery/bridal-detail.jpg",
