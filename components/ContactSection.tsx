@@ -12,9 +12,17 @@ const ContactSection = () => {
           <div className="space-y-12">
             <div>
               <h2 className="text-4xl md:text-5xl font-headline text-on-surface mb-8">
-                Visit Our Sanctuary
+                Visit Our Beauty Parlour in Meenchanda, Calicut
               </h2>
+
               <div className="w-20 h-1 bg-primary mb-10"></div>
+
+              <p className="text-lg text-on-surface-variant leading-8 max-w-xl">
+                Morocco Nature Beauty Clinic is a premium beauty parlour in
+                Meenchanda, Calicut offering bridal makeup, facials, skincare,
+                hair styling, threading, manicure, pedicure and student beauty
+                packages designed for modern beauty care.
+              </p>
             </div>
 
             <div className="space-y-10">
@@ -26,7 +34,7 @@ const ContactSection = () => {
                 </span>
                 <div>
                   <h4 className="font-label text-[10px] font-bold tracking-[0.2em] uppercase text-primary mb-2">
-                    Our Address
+                    Beauty Parlour Location
                   </h4>
                   <p className="text-xl text-on-surface font-body leading-relaxed">
                     Galeela Tower, Mini Bypass Road,
@@ -43,7 +51,7 @@ const ContactSection = () => {
                 </span>
                 <div>
                   <h4 className="font-label text-[10px] font-bold tracking-[0.2em] uppercase text-primary mb-2">
-                    Working Hours
+                    Beauty Clinic Timings
                   </h4>
                   <p className="text-xl text-on-surface font-body">
                     9:30 AM – 6:30 PM (Daily)
@@ -60,12 +68,18 @@ const ContactSection = () => {
                   <h4 className="font-label text-[10px] font-bold tracking-[0.2em] uppercase text-primary mb-2">
                     Get in Touch
                   </h4>
-                  <p className="text-xl text-on-surface font-body mb-1 font-bold">
+                  <a
+                    href="tel:+919961667296"
+                    className="text-xl text-on-surface font-body mb-1 font-bold block hover:text-primary transition"
+                  >
                     +91 9961667296
-                  </p>
-                  <p className="text-lg text-on-surface-variant font-body">
+                  </a>
+                  <a
+                    href="mailto:morocconaturecalicut@gmail.com"
+                    className="text-lg text-on-surface-variant font-body hover:text-primary transition"
+                  >
                     morocconaturecalicut@gmail.com
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -104,6 +118,7 @@ const ContactSection = () => {
 
               {/* ✅ REAL GOOGLE MAP */}
               <iframe
+                title="Morocco Nature Beauty Parlour Location in Meenchanda Calicut"
                 src="https://www.google.com/maps?q=Galeela%20Tower%20Mini%20Bypass%20Road%20Meenchanda%20Calicut&output=embed"
                 width="100%"
                 height="100%"

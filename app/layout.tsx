@@ -16,10 +16,36 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Best Beauty Parlour in Calicut | Morocco Nature",
+  title:
+    "Best Beauty Parlour in Meenchanda, Calicut | Bridal Makeup & Skincare",
 
   description:
-    "Morocco Nature is a premium beauty parlour in Calicut offering bridal makeup, hair styling, facials, skincare, and student beauty packages.",
+    "Looking for the best beauty parlour in Meenchanda, Calicut? Morocco Nature Beauty Clinic offers bridal makeup, facials, hair styling, skincare, threading, manicure, pedicure & student beauty offers.",
+
+  keywords: [
+    "best beauty parlour in Calicut",
+    "beauty parlour in Meenchanda",
+    "bridal makeup Calicut",
+    "facial treatment Calicut",
+    "hair styling Calicut",
+    "beauty clinic Meenchanda",
+    "student beauty offers Calicut",
+  ],
+
+  metadataBase: new URL("https://morocco-nature.vercel.app"),
+
+  openGraph: {
+    title:
+      "Morocco Nature Beauty Clinic | Best Beauty Parlour in Calicut",
+
+    description:
+      "Premium beauty parlour in Meenchanda, Calicut offering bridal makeup, facials, skincare and student offers.",
+
+    url: "https://morocco-nature.vercel.app",
+    siteName: "Morocco Nature Beauty Clinic",
+    locale: "en_IN",
+    type: "website",
+  },
 
   verification: {
     google: "RLXTe07bxK949cU7JTYryEJJLYxigzvsyYSUCxJfnsA",
@@ -43,6 +69,29 @@ export default function RootLayout({
       <body
         className={`${notoSerif.variable} ${manrope.variable} bg-surface font-body text-on-surface selection:bg-primary-container antialiased`}
       >
+        {/* Local Business SEO Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BeautySalon",
+              name: "Morocco Nature Beauty Clinic",
+              telephone: "+91 9961667296",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Galeela Tower, Mini Bypass Road",
+                addressLocality: "Meenchanda",
+                addressRegion: "Kerala",
+                postalCode: "673018",
+                addressCountry: "IN",
+              },
+              openingHours: "Mo-Su 09:30-18:30",
+              url: "https://morocco-nature.vercel.app",
+            }),
+          }}
+        />
+
         {children}
       </body>
     </html>
