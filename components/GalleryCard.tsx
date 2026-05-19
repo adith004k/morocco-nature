@@ -45,7 +45,7 @@ const GalleryCard = ({ item }: GalleryCardProps) => {
           </span>
           <h3 className="font-headline text-2xl mb-4">{item.title}</h3>
           <p className="font-body text-sm italic opacity-90 border-l-2 border-[#C9A24A] pl-4">
-            "{item.quote}"
+            &quot;{item.quote}&quot;
           </p>
         </div>
       </motion.div>
